@@ -9,6 +9,7 @@ describe('Testando o componente NotFound', () => {
     const titleH2 = screen.getByRole('heading', { name: /Page requested not found/i, level: 2 });
     expect(titleH2).toBeInTheDocument();
   });
+
   test('Testa se a página mostra uma imagem', () => {
     renderWithRouter(<NotFound />);
     const nFoundImg = screen.getByRole('img');
